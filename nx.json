@@ -1,0 +1,24 @@
+{
+  "extends": "@nrwl/workspace/presets/core.json",
+  "npmScope": "nx-pand",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/workspace"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "ZWMzMTA4ZDgtZDI4Mi00NDIxLWJmMWUtYjg1NDk4Zjg0OTA2fHJlYWQtd3JpdGU="
+      }
+    }
+  }
+}
